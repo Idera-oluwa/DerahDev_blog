@@ -1,19 +1,27 @@
 {
-  "name": "derahblog",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "autoprefixer": "10.4.14",
-    "next": "13.4.9",
-    "postcss": "8.4.25",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2"
+    "name": "blog",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "@next/font": "^13.4.6",
+      "autoprefixer": "10.4.14",
+      "graphql": "^16.6.0",
+      "graphql-request": "^6.1.0",
+      "html-react-parser": "^4.0.0",
+      "moment": "^2.29.4",
+      "next": "13.4.6",
+      "postcss": "8.4.24",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "react-icons": "^4.9.0",
+      "swiper": "^9.4.1",
+      "tailwindcss": "3.3.2"
+    }
   }
-}
+  
