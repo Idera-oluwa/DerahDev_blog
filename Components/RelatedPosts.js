@@ -5,7 +5,6 @@ import { getRecentPosts,getSimilarPosts } from '../services';
 
 const RelatedPosts = ({categories,slug}) => {
     const [relatedPosts, setRelatedPosts] = useState([])
-    console.log(categories)
 
     useEffect(() => {
       const fetchData = async () =>{
@@ -22,18 +21,6 @@ const RelatedPosts = ({categories,slug}) => {
     
       fetchData();
     }, [categories, slug]);
-    
-    // const fetchData = async () =>{
-    // let result;
-    // result= await getSimilarPosts(categories, slug)
-    // if (result.length > 1){
-    //   setRelatedPosts(result)
-    // }
-    // else{
-    //   let similar = await getRecentPosts()
-    //   setRelatedPosts(similar)
-    // }
-    // }
 
   return (
     <div className='w-[100vw] bg-[#858e94] py-[4rem]'>
