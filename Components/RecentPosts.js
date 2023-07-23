@@ -13,7 +13,7 @@ const RecentPosts = () => {
   console.log(posts)
 
   return (
-    <div className='mt-[4rem]'>
+    <div className='mt-[4rem] w-[85vw] mx-auto mb-[5rem]'>
       <h1 className='text-[2.5rem] text-center font-extrabold text-[#2a2d38]'>Latest Posts</h1>
       <div className='w-[3rem] h-[0.15rem] bg-black mb-[2.3rem] mx-auto mt-[1.3rem]'></div>
       <div className='grid grid-cols-fluid gap-[2.5rem]'>

@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBig from './NavBig'
+import NavSmall from './NavSmall'
 import moment from 'moment'
 import { FaLinkedinIn } from 'react-icons/fa'
 
@@ -53,9 +54,11 @@ const PostDetail = ({post}) => {
       };
     
   return (
-    <div className='w-[85vw] mx-auto mt-[2.5rem] mb-[5rem]'>
+    <div className='mt-[2.5rem] mb-[5rem]'>
     <NavBig/>
-    <div className='flex justify-center'><button className='bg-black text-white py-[0.3rem] px-[1rem] text-[0.95rem] font-semibold mt-[2rem] mx-auto'>Career Growth</button></div>
+    <NavSmall/>
+   <div className='w-[85vw] mx-auto'>
+   <div className='flex justify-center'><button className='bg-black text-white py-[0.3rem] px-[1rem] text-[0.95rem] font-semibold mt-[2rem] mx-auto'>Career Growth</button></div>
     <h1 className='text-[2.7rem] text-center font-bold text-[#2a2d38] mt-[1rem] w-[800px] mx-auto leading-[3.2rem]'>{post.title}</h1>
     <p className='mt-[1.5rem] text-[0.9rem] text-[#909ba5] text-center'>by <span className='text-black font-bold'>{post.authur.name}</span> - {moment(post.createdAt).format('MMM DD, YYYY')}</p>
     <img src={post.featuredImage.url} alt={post.title}
@@ -77,6 +80,7 @@ const PostDetail = ({post}) => {
          <FaLinkedinIn className='mt-[1rem]'/>
     </div>
     </div>
+   </div>
     </div>
   )
 }

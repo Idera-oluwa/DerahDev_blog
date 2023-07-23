@@ -2,6 +2,7 @@ import React, {useState, useEffect, useRef} from 'react'
 import {FiArrowLeftCircle, FiArrowRightCircle} from 'react-icons/fi'
 import {getFeaturedPosts} from '../services'
 import moment from 'moment';
+import Link from 'next/link';
 import { Autoplay, Navigation, Pagination, A11y, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -22,7 +23,7 @@ const FeaturedPosts = () => {
       }, []);
   return (
     <div>
-      <div className='mt-[4rem]'>
+      <div className='mt-[4rem] w-[85vw] mx-auto'>
         <h1 className='text-[2.9rem] text-center font-extrabold text-[#2a2d38]'>DerahDev Blog</h1>
         <p className='text-[1.25rem] text-center font-bold text-[#2a2d38] mt-[3.5rem]'>Stay up-to-date with the latest industry insights, as we explore software engineering best practices, 
           design patterns, and architectural principles that empower you to build scalable, maintainable, and

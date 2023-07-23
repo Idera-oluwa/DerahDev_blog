@@ -2,6 +2,7 @@ import React from 'react'
 import {getPosts, getPostDetails} from '../../services'
 import PostDetail from '../../Components/PostDetail';
 import RelatedPosts from '../../Components/RelatedPosts';
+import Footer from '../../Components/Footer';
 import {useRouter} from 'next/router'
 
 const postDetails = ({post}) => {
@@ -13,6 +14,7 @@ const postDetails = ({post}) => {
     <div>
       <PostDetail post={post}/>
       <RelatedPosts slug={post.slug} categories={post.categories.map((category)=>category.slug)}/>
+      <Footer/>
     </div>
   )
 }
