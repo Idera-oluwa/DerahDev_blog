@@ -8,25 +8,33 @@ const RelatedPosts = ({categories,slug}) => {
     console.log(categories)
 
     useEffect(() => {
-      const fetchData = async () => {
-        try {
-          let result;
-          if (slug) {
-            result = await getSimilarPosts(categories, slug);
-          } else {
-            result = await getRecentPosts();
-          }
-          setRelatedPosts(result);
-          console.log(result);
-        } catch (error) {
-          console.error('Error fetching data:', error);
+      const fetchData = async () =>{
+        let result;
+        result= await getSimilarPosts(categories, slug)
+        if (result.length > 1){
+          setRelatedPosts(result)
         }
-      };
+        else{
+          let similar = await getRecentPosts()
+          setRelatedPosts(similar)
+        }
+        }
     
       fetchData();
     }, [categories, slug]);
     
-      
+    // const fetchData = async () =>{
+    // let result;
+    // result= await getSimilarPosts(categories, slug)
+    // if (result.length > 1){
+    //   setRelatedPosts(result)
+    // }
+    // else{
+    //   let similar = await getRecentPosts()
+    //   setRelatedPosts(similar)
+    // }
+    // }
+
   return (
     <div className='w-[100vw] bg-[#858e94] py-[4rem]'>
         <div className='w-[85vw] mx-auto'>
