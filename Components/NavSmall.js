@@ -26,10 +26,10 @@ const NavSmall = () => {
     }, [])
   return (
     <div className='bg-white shadow-md fixed top-0 w-[100vw] mx-auto z-[1000]'>
-        {show && <div className='flex flex-row justify-between w-[90vw] md:w-[75vw] lg:w-[83vw] mx-auto items-center'>
+        {show && <div className='flex flex-row justify-between w-[90vw] md:w-[75vw] lg:w-[83vw] py-[1rem] mx-auto items-center'>
     <div className='flex flex-row items-center gap-[0.25rem] cursor-pointer'>
     <Link href='/'><h1 className='text-[1.6rem] md:text-[2.5rem] text-[#f83b66] font-bold'>DerahDev</h1></Link>
-    <FaCode className='text-[1.6rem] md:text-[2.5rem]  text-[#f83b66] '/>
+    <FaCode className='text-[1.6rem] md:text-[2.5rem] text-[#f83b66] '/>
     </div>
      <div className='hidden lg:flex flex-row gap-[1.5rem]'>
      {categories.map((category)=>{

@@ -23,9 +23,9 @@ const FeaturedPosts = () => {
       }, []);
   return (
     <div>
-      <div className='mt-[4rem] w-[85vw] mx-auto'>
-        <h1 className='text-[2.9rem] text-center font-extrabold text-[#2a2d38]'>DerahDev Blog</h1>
-        <p className='text-[1.25rem] text-center font-bold text-[#2a2d38] mt-[3.5rem]'>Stay up-to-date with the latest industry insights, as we explore software engineering best practices, 
+      <div className='mt-[3rem] md:mt-[4rem] w-[85vw] mx-auto'>
+        <h1 className='text-[1.9rem] md:text-[2.9rem] text-center font-extrabold text-[#2a2d38]'>DerahDev Blog</h1>
+        <p className='text-[0.95rem] md:text-[1.25rem] text-center font-bold text-[#2a2d38] mt-[1.5rem] md:mt-[3.5rem]'>Stay up-to-date with the latest industry insights, as we explore software engineering best practices, 
           design patterns, and architectural principles that empower you to build scalable, maintainable, and
            high-performing applications.</p>
            <Swiper
