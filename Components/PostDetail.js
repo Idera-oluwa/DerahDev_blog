@@ -76,8 +76,8 @@ const PostDetail = ({post}) => {
     <div>
         <p className='text-[0.8rem]'>Written By:</p>
         <h1 className='font-bold text-[1.2rem]'>{post.authur.name}</h1>
-        <p className='w-[80%] text-[0.9rem] mt-[1rem] opacity-[90%]'>Idera is a content writer for DerahDev and a Certified Life Coach. With a background in spa and wellness, she's constantly on the lookout for natural, effective ways that help with one's overall well-being.</p>
-         <FaLinkedinIn className='mt-[1rem]'/>
+        <p className='w-[80%] text-[0.9rem] mt-[1rem] opacity-[90%]'>{post.authur.bio}</p>
+        <a href='https://www.linkedin.com/in/zainab-isa-a33066211' target="_blank" rel="noreferrer"><FaLinkedinIn className='mt-[1rem]'/></a>
     </div>
     </div>
    </div>
