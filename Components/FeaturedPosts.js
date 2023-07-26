@@ -43,14 +43,14 @@ const FeaturedPosts = () => {
       {dataLoaded && featuredPosts.map((post)=>{
         return(
           <SwiperSlide>
-      <div className='grid grid-cols-3 mt-[4.5rem] mb-[4.5rem] relative'>
+      <div className='grid md:grid-cols-3 mt-[4.5rem] mb-[4.5rem] relative'>
       <img src={post.featuredImage.url}
-            className=' col-span-2 w-[90%] h-[25rem]'
+            className='md:col-span-2 w-[90%] h-[14rem] md:h-[25rem]'
             alt={post.title}/>
-           <div className=' col-span-1 flex flex-col justify-center'>
+           <div className=' md:col-span-1 flex flex-col justify-center mt-[2rem] md:mt-[0rem]'>
               <button className='w-[8.2rem] h-[2.5rem] bg-[#005cff] text-center mr-auto text-white text-[0.85rem] font-bold'>FEATURED</button>
               <Link href={`/post/${post.slug}`}><h1 className='font-bold text-[2.3rem] leading-[2.9rem] mt-[0.5rem] cursor-pointer'>{post.title}</h1></Link>
-            <p className='mt-[0.5rem] text-[0.9rem] text-[#909ba5]'>By <span className='text-[#005cff] font-bold'>{post.authur.name}</span> | {moment(post.createdAt).format('MMM DD, YYYY')}</p>
+            <p className='mt-[0.5rem] text-[0.8rem] text-[#909ba5]'>By <span className='text-[#005cff] font-bold'>{post.authur.name}</span> | {moment(post.createdAt).format('MMM DD, YYYY')}</p>
             </div>
             <div className='absolute left-0 right-0 top-[50%] flex justify-between'>
               <FiArrowLeftCircle className='text-[#909ba5] text-[1.6rem] hover:text-[#005cff] cursor-pointer'
