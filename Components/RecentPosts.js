@@ -19,7 +19,7 @@ const RecentPosts = () => {
       <div className='grid grid-cols-fluid gap-[2.5rem]'>
         {posts.map((post)=>{
         return(
-          <div>
+          <div key={post.node.slug} className='w-[90%]'>
             <img src={post.node.featuredImage.url} className='min-w-[100%] h-[16rem] md:h-[21.5rem]'/>
             <button className='bg-black text-white p-[0.3rem] text-[0.7rem] font-semibold mt-[1.2rem]'>{post.node.categories[0].name}</button>
             <Link href={`/post/${post.node.slug}`}><h1 className='text-[1.5rem] md:text-[1.65rem]  leading-[1.8rem] font-bold text-[#2a2d38] mt-[0.8rem]'>{post.node.title}</h1></Link>
