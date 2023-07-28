@@ -1,6 +1,4 @@
 import React,{useState, useEffect} from 'react'
-import NavBig from './NavBig'
-import NavSmall from './NavSmall'
 import moment from 'moment'
 import { FaLinkedinIn } from 'react-icons/fa'
 
@@ -55,14 +53,12 @@ const PostDetail = ({post}) => {
     
   return (
     <div className='mt-[2.5rem] mb-[5rem]'>
-    <NavBig/>
-    <NavSmall/>
    <div className='w-[90vw] md:w-[75vw] lg:w-[83vw] mx-auto'>
    <div className='flex justify-center'><button className='bg-black text-white py-[0.3rem] px-[1rem] text-[0.75rem] lg:text-[0.95rem] font-semibold mt-[2rem] mx-auto'>{post.categories[0].name}</button></div>
     <h1 className='text-[1.7rem] lg:text-[2.7rem] text-center font-bold text-[#2a2d38] mt-[1rem] w-[100%] lg:w-[800px] mx-auto leading-[1.7rem] lg:leading-[3.2rem]'>{post.title}</h1>
     <p className='mt-[1.1rem] md:mt-[1.5rem] text-[0.9rem] text-[#909ba5] text-center'>by <span className='text-black font-bold'>{post.authur.name}</span> - {moment(post.createdAt).format('MMM DD, YYYY')}</p>
     <img src={post.featuredImage.url} alt={post.title}
-    className='w-[100%] mt-[2rem] md:mt-[3rem] h-[17rem] md:h-[90vh]'/>
+    className='min-w-[100%] mt-[2rem] md:mt-[3rem] h-[17rem] md:h-[90vh]'/>
     <div className='w-full lg:w-[70%] mx-[auto] mt-[3rem]'>
     {post.content.raw.children.map((typeObj, index) => {
             const children = typeObj.children.map((item, itemindex) => getContentFragment(itemindex, item.text, item));

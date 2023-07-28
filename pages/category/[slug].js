@@ -2,8 +2,6 @@ import React,{useEffect,useState} from 'react'
 import { useRouter } from 'next/router';
 import moment from 'moment';
 import Link from 'next/link'
-import NavBig from '../../Components/NavBig';
-import NavSmall from '../../Components/NavSmall';
 import Footer from '../../Components/Footer';
 
 import { getCategories, getCategoryPost } from '../../services';
@@ -27,8 +25,6 @@ categoryItem()
 
   return (
     <div className='mt-[2.8rem]'>
-      <NavBig/>
-    <NavSmall/>
     <div className='w-[90vw] md:w-[75vw] lg:w-[83vw] mx-auto'>
     <h1 className='text-center text-[1.5rem] md:text-[2.5rem] text-[#2a2d38] mt-[2rem]'>Category: <span className='font-bold'>{category}</span></h1>
     <p className='text-center mt-[0.5rem] text-[0.9rem]'>{posts.length} articles</p>
