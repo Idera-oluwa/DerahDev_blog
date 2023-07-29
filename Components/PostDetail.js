@@ -66,13 +66,13 @@ const PostDetail = ({post}) => {
             return getContentFragment(index, children, typeObj, typeObj.type);
           })}
     </div>
-    <div className='flex flex-col md:flex-row mt-[5rem] gap-[1rem] w-[90%] md:w-[100%] lg:w-[1000px]'>
+    <div className='flex flex-col md:flex-row mt-[5rem] gap-[1rem] w-[90%] md:w-[100%] lg:w-[1000px] mx-auto'>
     <div className='w-full md:w-[80%] lg:w-[30%]'><img src={post.authur.photo.url} alt={post.authur.name}
     className='w-[7rem] h-[7rem] rounded-full mr-auto ml-auto md:ml-0'/> </div>
     <div>
         <p className='text-[0.8rem] text-center md:text-left'>Written By:</p>
         <h1 className='font-bold text-[1.2rem] text-center md:text-left mx-auto'>{post.authur.name}</h1>
-        <p className='w-[80%] md:w-[70%] text-[0.9rem] mt-[1rem] text-center md:text-left mr-auto ml-auto md:ml-0 opacity-[90%]'>{post.authur.bio}</p>
+        <p className='w-[100%] md:w-[70%] text-[0.9rem] mt-[1rem] text-center md:text-left mr-auto ml-auto md:ml-0 opacity-[90%]'>{post.authur.bio}</p>
         <a href='https://www.linkedin.com/in/zainab-isa-a33066211' target="_blank" rel="noreferrer"><FaLinkedinIn className='mt-[1rem] mr-auto ml-auto md:ml-0'/></a>
     </div>
     </div>
