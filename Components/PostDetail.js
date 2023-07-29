@@ -77,8 +77,8 @@ const PostDetail = ({post}) => {
         <a href='https://www.linkedin.com/in/zainab-isa-a33066211' target="_blank" rel="noreferrer"><FaLinkedinIn className='mt-[1rem]'/></a>
         <a href='https://www.instagram.com/derah.dev' target="_blank" rel="noreferrer"><FaInstagram className='mt-[1rem]'/></a>
         <a href='https://www.twitter.com/derah_dev' target="_blank" rel="noreferrer"><FaTwitter className='mt-[1rem]'/></a>
-        <a href='https://www.twitter.com/derah_dev' target="_blank" rel="noreferrer"><FaLink className='mt-[1rem]'/></a>
-        <a href='https://www.twitter.com/derah_dev' target="_blank" rel="noreferrer"><FaWhatsapp className='mt-[1rem]'/></a>
+        <a href='https://isa-zainab.netlify.app' target="_blank" rel="noreferrer"><FaLink className='mt-[1rem]'/></a>
+        <a href='https://wa.me/2349156536793' target="_blank" rel="noreferrer"><FaWhatsapp className='mt-[1rem]'/></a>
         </div>
     </div>
     </div>
