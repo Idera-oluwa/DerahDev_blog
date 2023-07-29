@@ -4,7 +4,7 @@ import {HiOutlineMenuAlt1} from 'react-icons/hi'
 import {getCategories} from '../services'
 import Link from 'next/link';
 
-const NavSmall = () => {
+const NavSmall = ({openMenu}) => {
     const [categories, setCategories] = useState([])
     const [show, setShow] = useState(false)
     useEffect(() => {
@@ -40,7 +40,7 @@ const NavSmall = () => {
          )
      })}
  </div>
- <div className='flex flex-row lg:hidden cursor-pointer'><HiOutlineMenuAlt1 className='text-[1.5rem] hover:text-[#f83b66] opacity-[70%]'/></div>
+ <div className='flex flex-row lg:hidden cursor-pointer'><HiOutlineMenuAlt1 className='text-[1.5rem] hover:text-[#f83b66] opacity-[70%]' onClick={openMenu}/></div>
     <FaSearch className='cursor-pointer hidden lg:flex'/>
   </div>}
     </div>
