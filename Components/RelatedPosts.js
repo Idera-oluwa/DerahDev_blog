@@ -29,7 +29,7 @@ const RelatedPosts = ({categories,slug}) => {
         <div className='grid grid-cols-fluid gap-[2.5rem] mt-[2rem] md:mt-[3rem]'>
         {relatedPosts.map((post)=>{
         return(
-          <div key={post.slug} className='w-[90%]'>
+          <div key={post.slug} className='w-full mx-auto'>
             <img src={post.featuredImage.url} className='min-w-[100%] max-w-[100%] h-[16rem] md:h-[21.5rem]' alt=''/>
             <button className='bg-black text-white p-[0.3rem] text-[0.7rem] font-semibold mt-[1.2rem]'>{categories}</button>
             <Link href={`/post/${post.slug}`}><h1 className='text-[1.5rem] md:text-[1.65rem] leading-[1.8rem] font-bold text-[white] mt-[0.8rem]'>{post.title}</h1></Link>
