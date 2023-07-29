@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import moment from 'moment'
-import { FaLinkedinIn } from 'react-icons/fa'
+import { FaLinkedinIn,FaInstagram,FaTwitter,FaLink,FaWhatsapp } from 'react-icons/fa'
 
 
 const PostDetail = ({post}) => {
@@ -73,7 +73,13 @@ const PostDetail = ({post}) => {
         <p className='text-[0.8rem] text-center md:text-left'>Written By:</p>
         <h1 className='font-bold text-[1.2rem] text-center md:text-left mx-auto'>{post.authur.name}</h1>
         <p className='w-[100%] md:w-[70%] text-[0.9rem] mt-[1rem] text-center md:text-left mr-auto ml-auto md:ml-0 opacity-[90%]'>{post.authur.bio}</p>
-        <a href='https://www.linkedin.com/in/zainab-isa-a33066211' target="_blank" rel="noreferrer"><FaLinkedinIn className='mt-[1rem] mr-auto ml-auto md:ml-0'/></a>
+        <div className='flex flex-row gap-[1rem] justify-center md:justify-start w-[50%] ml-auto mr-auto md:ml-0'>
+        <a href='https://www.linkedin.com/in/zainab-isa-a33066211' target="_blank" rel="noreferrer"><FaLinkedinIn className='mt-[1rem]'/></a>
+        <a href='https://www.instagram.com/derah.dev' target="_blank" rel="noreferrer"><FaInstagram className='mt-[1rem]'/></a>
+        <a href='https://www.twitter.com/derah_dev' target="_blank" rel="noreferrer"><FaTwitter className='mt-[1rem]'/></a>
+        <a href='https://www.twitter.com/derah_dev' target="_blank" rel="noreferrer"><FaLink className='mt-[1rem]'/></a>
+        <a href='https://www.twitter.com/derah_dev' target="_blank" rel="noreferrer"><FaWhatsapp className='mt-[1rem]'/></a>
+        </div>
     </div>
     </div>
    </div>
