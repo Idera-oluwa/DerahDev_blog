@@ -16,7 +16,7 @@ module.exports = {
         sans: ['"Poppins", sans-serif']
       },
       gridTemplateColumns: {
-        'fluid': 'repeat(auto-fit, minmax(335px, 1fr))',
+        'fluid': 'repeat(auto-fit, minmax(330px, 1fr))',
       } 
     },
   },
