@@ -3,6 +3,8 @@ import {getPosts, getPostDetails} from '../../services'
 import PostDetail from '../../Components/PostDetail';
 import RelatedPosts from '../../Components/RelatedPosts';
 import Footer from '../../Components/Footer';
+import CommentsForm from '../../Components/CommentsForm';
+import Comments from '../../Components/Comments';
 import {useRouter} from 'next/router'
 
 const postDetails = ({post}) => {
@@ -13,6 +15,8 @@ const postDetails = ({post}) => {
   return (
     <div>
       <PostDetail post={post}/>
+      <CommentsForm slug={post.slug}/>
+      <Comments slug={post.slug}/>
       <RelatedPosts slug={post.slug} categories={post.categories.map((category)=>category.slug)}/>
       <Footer/>
     </div>
