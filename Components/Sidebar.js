@@ -13,12 +13,12 @@ const Sidebar = ({menuOpen,closeMenu}) => {
    <div className={`fixed lg:hidden top-0 z-[10000] w-full ${menuOpen ? `h-[100vh]` : `h-0`} bg-[#000000cc]`}>
    <div className={`w-[90vw] md:w-[75vw] lg:w-[83vw] transition-all ease-in-out duration-500 container transform -translate-x-full ${menuOpen && `transform translate-x-0`}`}>
     <div className='w-[7cm] md:w-[12cm] h-[100vh] bg-white px-[0.5cm] pt-[0.3cm]'>
-    <div className='flex flex-row items-center justify-between'>
-    <div className='flex flex-row items-center gap-[0.25rem] cursor-pointer mt-[2rem]'>
+    <div className='flex flex-row items-center justify-between mt-[2rem]'>
+    <div className='flex flex-row items-center gap-[0.25rem] cursor-pointer'>
     <Link href='/'><h1 className='text-[1.6rem] md:text-[2.5rem] text-[#f83b66] font-bold'>DerahDev</h1></Link>
     <FaCode className='text-[1.6rem] md:text-[2.5rem] text-[#f83b66] '/>
     </div>
-    <FaTimes className='cursor-pointer' onClick={closeMenu}/>
+    <div className='flex w-[3rem] h-[3rem] items-center justify-center'><FaTimes className='cursor-pointer text-[1.2rem]' onClick={closeMenu}/></div>
     </div>
    <div className='mt-[2rem] ml-[1rem]'>
    <h1 className='text-[1.3rem] font-bold'>Menu</h1>
