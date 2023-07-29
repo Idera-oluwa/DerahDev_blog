@@ -30,7 +30,7 @@ categoryItem()
     <p className='text-center mt-[0.5rem] text-[0.9rem]'>{posts.length} articles</p>
     <p className='text-center w-[100%] md:w-[35rem] mx-auto mt-[1.5rem]'>Explore how to find your soul’s purpose and tap into the power of manifestation. 
       Discover stories from top experts: Isa Zainab, Azeez Umar Faruk and others</p>
-      <div className='grid grid-cols-fluid gap-[2.5rem] mt-[3rem] mb-[3rem]'>
+      <div className='grid grid-cols-fluid gap-[2.5rem] md:gap-[1.2rem] mt-[3rem] mb-[3rem]'>
         {posts.map((post)=>{
         return(
           <div>

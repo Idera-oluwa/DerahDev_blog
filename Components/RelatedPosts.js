@@ -26,7 +26,7 @@ const RelatedPosts = ({categories,slug}) => {
     <div className='w-[100%] bg-[#858e94] py-[2rem] md:py-[4rem]'>
         <div className='w-[90vw] md:w-[75vw] lg:w-[83vw]  mx-auto'>
         <h1 className='text-[1.5rem] md:text-[2.5rem] text-center font-extrabold text-[white]'>You Might Also Like</h1>
-        <div className='grid grid-cols-fluid gap-[1.5rem] mt-[2rem] md:mt-[3rem]'>
+        <div className='grid grid-cols-fluid gap-[2.5rem] md:gap-[1.2rem] mt-[2rem] md:mt-[3rem]'>
         {relatedPosts.map((post)=>{
         return(
           <div key={post.slug} className='w-full mx-auto'>

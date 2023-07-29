@@ -16,7 +16,7 @@ const RecentPosts = () => {
     <div className='mt-[4rem] w-[90vw] md:w-[75vw] lg:w-[83vw] mx-auto mb-[5rem]'>
       <h1 className='text-[1.5rem] md:text-[2.5rem] text-center font-extrabold text-[#2a2d38]'>Latest Posts</h1>
       <div className='w-[3rem] h-[0.15rem] bg-black mb-[1.8rem] md:mb-[2.3rem] mx-auto mt-[0.9rem] md:mt-[1.3rem]'></div>
-      <div className='grid grid-cols-fluid gap-[1.5rem]'>
+      <div className='grid grid-cols-fluid gap-[2.5rem] md:gap-[1.2rem] '>
         {posts.map((post)=>{
         return(
           <div key={post.node.slug} className='container mx-auto'>
