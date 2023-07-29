@@ -17,7 +17,10 @@ module.exports = {
       },
       gridTemplateColumns: {
         'fluid': 'repeat(auto-fit, minmax(310px, 1fr))',
-      } 
+      },
+      boxShadow: {
+        'form': '-10px 9px 9px 9px rgba(0, 0, 0, 0.1)',
+      }
     },
   },
   plugins: [],

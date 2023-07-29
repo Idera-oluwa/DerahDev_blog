@@ -46,7 +46,7 @@ const CommentsForm = ({slug}) => {
         emailEl.current.value = window.localStorage.getItem('email')
       },[])
     return (
-        <div className='bg-white shadow-lg rounded-lg p-8 pb-12 mb-8 w-[90vw] md:w-[75vw] lg:w-[83vw] mx-auto'>
+        <div className='bg-white shadow rounded-lg p-8 pb-12 mb-8 w-[90vw] md:w-[75vw] lg:w-[83vw] mx-auto border'>
             <h3 className='text-xl mb-8 font-semibold border-b pb-4'>Leave a Reply</h3>
         <div className='grid grid-cols-1 gap-4 mb-4'>
         <textarea ref={commentEl} 
