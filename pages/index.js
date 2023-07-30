@@ -7,6 +7,13 @@ export default function Home() {
   <div>
   <Head>
         <title>Derahdev Blog</title>
+        <Head>
+      <meta property="og:title" content='Derahdev blog'/>
+        <meta property="og:description" content='An exclusive website' />
+        <meta property="og:image" content='Images/dev.jpg' />
+        <meta property="og:type" content="article" />
+        {/* <meta property="og:url" content="URL of the page you're sharing" /> */}
+      </Head>
       </Head>
     <Hero/>
   </div>
