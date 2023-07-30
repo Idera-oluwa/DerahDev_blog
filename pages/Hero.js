@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import FeaturedPosts from '../Components/FeaturedPosts';
 import RecentPosts from '../Components/RecentPosts';
 import Careerdev from '../Components/Careerdev';
+import Webdev from '../Components/Webdev';
 import Footer from '../Components/Footer';
 
 const Hero = () => {
@@ -12,6 +13,7 @@ const Hero = () => {
     <FeaturedPosts/>
     <RecentPosts/>
     <Careerdev/>
+    <Webdev/>
     <Footer/>
         </div>
     )

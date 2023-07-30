@@ -3,25 +3,25 @@ import moment from 'moment';
 import Link from 'next/link'
 import {getPosts} from '../services';
 
-const Careerdev = () => {
+const Webdev = () => {
   const [posts, setPosts] = useState([])
   useEffect(() => {
     const fetchPost = async () =>{
-      const data = await getPosts();
-      const result = data.filter(item => {
-          if (Array.isArray(item.node.categories)) {
-            return item.node.categories.some(obj => obj.name === 'Career Development');
-          }
-          return item.node.categories.name === 'Career Development';
-        });
-      setPosts(result);
-      }
+    const data = await getPosts();
+    const result = data.filter(item => {
+        if (Array.isArray(item.node.categories)) {
+          return item.node.categories.some(obj => obj.name === 'Web Development');
+        }
+        return item.node.categories.name === 'Web Development';
+      });
+    setPosts(result);
+    }
 fetchPost()
     },[]);
   
   return (
     <div className='mt-[4rem] w-[90vw] md:w-[75vw] lg:w-[83vw] mx-auto mb-[5rem]'>
-      <h1 className='text-[1.5rem] md:text-[2.5rem] text-center font-extrabold text-[#2a2d38]'>Career Development</h1>
+      <h1 className='text-[1.5rem] md:text-[2.5rem] text-center font-extrabold text-[#2a2d38]'>Web Development</h1>
       <div className='w-[3rem] h-[0.15rem] bg-black mb-[1.8rem] md:mb-[2.3rem] mx-auto mt-[0.9rem] md:mt-[1.3rem]'></div>
       <div className='grid grid-cols-fluid gap-[2.5rem] md:gap-[1.5rem] '>
         {posts.map((post)=>{
@@ -39,7 +39,7 @@ fetchPost()
   )
 }
 
-export default Careerdev
+export default Webdev
 
 export async function getStaticProps(){
   const posts =(await getPosts()) || [];
