@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React,{useState, useEffect} from 'react'
 import moment from 'moment'
 import { FaLinkedinIn,FaInstagram,FaTwitter,FaLink,FaWhatsapp } from 'react-icons/fa'
@@ -53,6 +54,12 @@ const PostDetail = ({post}) => {
     
   return (
     <div className='mt-[2.5rem] mb-[5rem]'>
+       <Head>
+      <meta property="og:title" content='Derahdev blog'/>
+        <meta property="og:description" content={post.title} />
+        <meta property="og:image" content={post.featuredImage.url} />
+        {/* <meta property="og:url" content="URL of the page you're sharing" /> */}
+      </Head>
    <div className='w-[90vw] md:w-[75vw] lg:w-[83vw] mx-auto'>
    <div className='flex justify-center'><button className='bg-black text-white py-[0.3rem] px-[1rem] text-[0.75rem] lg:text-[0.95rem] font-semibold mt-[2rem] mx-auto'>{post.categories[0].name}</button></div>
     <h1 className='text-[1.7rem] lg:text-[2.7rem] text-center font-bold text-[#2a2d38] mt-[1rem] w-[100%] lg:w-[800px] mx-auto leading-[1.7rem] lg:leading-[3.2rem]'>{post.title}</h1>

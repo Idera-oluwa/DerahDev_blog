@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React from 'react'
 import {getPosts, getPostDetails} from '../../services'
 import PostDetail from '../../Components/PostDetail';
