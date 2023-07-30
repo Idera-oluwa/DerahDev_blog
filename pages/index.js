@@ -12,6 +12,7 @@ export default function Home() {
         <meta property="og:description" content='An exclusive website' />
         <meta property="og:image" content='Images/dev.jpg' />
         <meta property="og:type" content="article" />
+        <link rel="icon" href="Images/dev.jpg" />
         {/* <meta property="og:url" content="URL of the page you're sharing" /> */}
       </Head>
       </Head>
