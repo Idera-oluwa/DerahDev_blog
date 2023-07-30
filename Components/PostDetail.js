@@ -58,6 +58,7 @@ const PostDetail = ({post}) => {
       <meta property="og:title" content='Derahdev blog'/>
         <meta property="og:description" content={post.title} />
         <meta property="og:image" content={post.featuredImage.url} />
+        <meta property="og:type" content="article" />
         {/* <meta property="og:url" content="URL of the page you're sharing" /> */}
       </Head>
    <div className='w-[90vw] md:w-[75vw] lg:w-[83vw] mx-auto'>
