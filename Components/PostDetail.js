@@ -54,13 +54,31 @@ const PostDetail = ({post}) => {
     
   return (
     <div className='mt-[2.5rem] mb-[5rem]'>
-       <Head>
-      <meta property="og:title" content='Derahdev blog'/>
-        <meta property="og:description" content={post.title} />
-        <meta property="og:image" content={post.featuredImage.url} />
-        <meta property="og:type" content="article" />
-        {/* <meta property="og:url" content="URL of the page you're sharing" /> */}
-      </Head>
+<NextSeo
+            title={post.node.title}
+            description="Next SEO packages simplifies the SEO management in Next Apps with less configurations"
+            canonical="www.example.com/next-seo-blog"
+            openGraph={{
+                type: 'article',
+                article: {
+                    publishedTime: '2022-06-21T23:04:13Z',
+                    modifiedTime: '2022-01-21T18:04:43Z',
+                    authors: [
+                        'https://www.example.com/authors/@firstnameA-lastnameA',
+                        'https://www.example.com/authors/@firstnameB-lastnameB',
+                    ],
+                    tags: ['Tag A', 'Tag B', 'Tag C'],
+                },
+                url: 'www.example.com/next-seo-blog',
+                images: {
+                    url: post.featuredImage.url ,
+                    width: 850,
+                    height: 650,
+                    alt: 'Photo of text',
+                },
+                site_name: 'Next Blog'
+            }}
+        />
    <div className='w-[90vw] md:w-[75vw] lg:w-[83vw] mx-auto'>
    <div className='flex justify-center'><button className='bg-black text-white py-[0.3rem] px-[1rem] text-[0.75rem] lg:text-[0.95rem] font-semibold mt-[2rem] mx-auto'>{post.categories[0].name}</button></div>
     <h1 className='text-[1.7rem] lg:text-[2.7rem] text-center font-bold text-[#2a2d38] mt-[1rem] w-[100%] lg:w-[800px] mx-auto leading-[1.7rem] lg:leading-[3.2rem]'>{post.title}</h1>

@@ -7,6 +7,7 @@ import Footer from '../../Components/Footer';
 import CommentsForm from '../../Components/CommentsForm';
 import Comments from '../../Components/Comments';
 import {useRouter} from 'next/router'
+import {NextSeo} from 'next-seo';
 
 const postDetails = ({post}) => {
     const router = useRouter();
@@ -15,13 +16,31 @@ const postDetails = ({post}) => {
     }
   return (
     <div>
-      <Head>
-      <meta property="og:title" content='Derahdev blog'/>
-        <meta property="og:description" content={post.title} />
-        <meta property="og:type" content="article" />
-        <meta property="og:image" content={post.featuredImage.url} />
-        {/* <meta property="og:url" content="URL of the page you're sharing" /> */}
-      </Head>
+      <NextSeo
+            title={post.node.title}
+            description="Next SEO packages simplifies the SEO management in Next Apps with less configurations"
+            canonical="www.example.com/next-seo-blog"
+            openGraph={{
+                type: 'article',
+                article: {
+                    publishedTime: '2022-06-21T23:04:13Z',
+                    modifiedTime: '2022-01-21T18:04:43Z',
+                    authors: [
+                        'https://www.example.com/authors/@firstnameA-lastnameA',
+                        'https://www.example.com/authors/@firstnameB-lastnameB',
+                    ],
+                    tags: ['Tag A', 'Tag B', 'Tag C'],
+                },
+                url: 'www.example.com/next-seo-blog',
+                images: {
+                    url: post.featuredImage.url ,
+                    width: 850,
+                    height: 650,
+                    alt: 'Photo of text',
+                },
+                site_name: 'Next Blog'
+            }}
+        />
       <PostDetail post={post}/>
       <CommentsForm slug={post.slug}/>
       <Comments slug={post.slug}/>
