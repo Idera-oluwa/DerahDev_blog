@@ -55,7 +55,7 @@ const PostDetail = ({post}) => {
   return (
     <div className='mt-[2.5rem] mb-[5rem]'>
 <NextSeo
-            title={post.node.title}
+            title={post.title}
             description="Next SEO packages simplifies the SEO management in Next Apps with less configurations"
             canonical="www.example.com/next-seo-blog"
             openGraph={{
