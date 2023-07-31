@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import 'tailwindcss/tailwind.css'
 import Layout from '../Components/Layout'
 import NextProgress from "next-progress";
+import {NextSeo} from 'next-seo';
 
 export default function App({ Component, pageProps }) {
   return (
