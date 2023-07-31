@@ -26,7 +26,7 @@ export default function Home() {
                 },
                 url: 'www.example.com/next-seo-blog',
                 images: {
-                    url: 'Images/dev.jpg' ,
+                    url: 'https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg' ,
                     width: 850,
                     height: 650,
                     alt: 'Photo of text',
