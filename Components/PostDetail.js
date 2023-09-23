@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React,{useState, useEffect} from 'react'
 import moment from 'moment'
+import { NextSeo } from 'next-seo';
 import { FaLinkedinIn,FaInstagram,FaTwitter,FaLink,FaWhatsapp } from 'react-icons/fa'
 
 
